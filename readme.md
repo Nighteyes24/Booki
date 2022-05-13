@@ -1,2 +1,9 @@
-site réservation Booki
-premier projet de formation web dev
+PROJET EN COURS!
+
+premier livrable de formation web dev :
+
+Compétences évaluées
+
+    Intégrer du contenu conformément à une maquette
+    Implémenter une interface responsive
+
