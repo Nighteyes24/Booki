@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+
+/* global */
+
+* {
+  font-family: "Raleway", "calibri", "font family";
+  box-sizing: border-box;
+  color: black;
+}
+
+body {
+  font-size: 15px;
+  max-width: 1440px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+.followup {
+  text-decoration: none;
+}
+/* PARTIE TOP // header*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin: 0 50px;
+}
+
+.navbar-item {
+  padding: 0 45px;
+  justify-items: center;
+  text-decoration: none;
+}
+#logo {
+  margin-right: auto;
+  height: 70px;
+}
+.navbar-item:hover {
+  border-top: 4px solid #0065fc;
+  padding: 45px;
+  color: #0065fc;
+  justify-items: center;
+  text-decoration: none;
+}
+
+/* PARTIE SEARCH & FILTRES*/
+
+.search-form {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.form-icon {
+  font-size: 15px;
+  padding: 15px 15px 15px 15px;
+  color: #000;
+  border: 1px solid #e0e0e0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #e0e0e0;
+}
+
+.form-txt {
+  border: 1px solid #f2f2f2;
+  color: #000;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+.form-sub {
+  font-size: 15px;
+  background: #0065fc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding: 15px 0px 15px 15px;
+  color: #ffff;
+  border-style: none;
+  font-weight: bold;
+  width: 130px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  min-width: 100px;
+  border-radius: 50px;
+  border: 2px solid #f2f2f2;
+  background-color: #ffff;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-left: 0px;
+  transition-duration: 0.4s;
+}
+.Iconefiltre {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #deebff;
+  background-color: #deebff;
+  color: #0065fc;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: #deebff;
+}
+.IconeInfo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border: 2px solid #f2f2f2;
+  background-color: #fff;
+  color: #0065fc;
+  text-align: center;
+}
+
+/*Partie Mars Hotels*/
+
+.page-accommodation {
+  display: flex;
+  gap: 45px;
+}
+.acc-mars {
+  border-radius: 20px;
+  width: 67%;
+}
+.hot-mars {
+  background-color: #f2f2f2;
+}
+
+/* infos cards hotels page accommodation */
+
+.card {
+  background: white;
+  padding: 10px;
+  }
+.card-shadow {
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  border: 2px #777;
+  border-radius: 10px;
+  max-width: 200px;
+}
+.card-header {
+  margin-bottom: 5px;
+}
+.card-header.card-img {
+  overflow: hidden;
+}
+.card-header.card-img > img {
+  display: block;
+  width: 100%;
+  max-height: 100px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+  transition: 200ms transform ease-in-out;
+}
+.card:hover > .card-header.card-img > img {
+  transform: scale(1.025);
+}
+
+.card-footer {
+  margin-top: 10px;
+  font-size: small;
+}
+.card-star {
+  color: blue;
+}
+
+/*partie aside - populaires*/
+
+.pop-mars {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 33%;
+  min-width: 350px;
+  padding: 40px 40px 0px 40px;
+}
+
+/*partie activités*/
+
+/*partie du footer */
+
+footer {
+  background-color: #f2f2f2;
+  display: flex;
+  margin-top: 40px;
+  padding: 45px;
+}
+
+.footer-item {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+ul{
+  margin: 0px;
+padding: 0px;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
