@@ -20,7 +20,7 @@
 
     <header>
       <a href="#"
-        ><img id="logo" src="images/logo/Booki.png" alt="logo booki"
+        ><img class="logo" src="images/logo/Booki.png" alt="logo booki"
       /></a>
 
       <nav class="navbar-container">
@@ -35,56 +35,60 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <div class="search-form">
-          <form method="post" action="#">
-            <span class="form-icon"
-              ><i class="fa-solid fa-location-dot"></i
-            ></span>
-            <input
-              class="form-txt"
-              type="text"
-              name="ville"
-              id="ville"
-              placeholder="Marseille, France"
-            />
-            <input class="form-sub" type="submit" value="Rechercher" />
+        <div>
+          <form class="formulaire">
+            <div class= "recherche">
+              <i class="fas fa-map-marker-alt"></i>
+              <input
+                type="search"
+                id="marecherche"
+                name="lieu"
+                placeholder="Marseille, France"
+              />
+              <button class="couleur bouton">
+                <span class="texte_bouton">Rechercher</span
+                ></i>
+              </button>
+            </div>
           </form>
         </div>
 
         <div class="filter">
           <h3>Filtres</h3>
           <button class="button">
-            <i class="fa-solid fa-money-bill-wave Iconefiltre"></i>
+            <div><i class="fa-solid fa-money-bill-wave Icone-fi"></i></div>
             <span class="btn-label">Économique</span>
           </button>
 
           <button class="button">
-            <i class="fa-solid fa-child-reaching Iconefiltre"></i>
+            <i class="fa-solid fa-child-reaching Icone-fi"></i>
             <span class="btn-label">Familial</span>
           </button>
 
           <button class="button">
-            <i class="fa-solid fa-heart Iconefiltre"></i>
+            <i class="fa-solid fa-heart Icone-fi"></i>
             <span class="btn-label">Romantique</span>
           </button>
 
           <button class="button">
-            <i class="fa-solid fa-paw Iconefiltre"></i>
+            <i class="fa-solid fa-paw Icone-fi"></i>
             <span class="btn-label">Pet Friendly</span>
           </button>
         </div>
       </div>
-      <div class="filter">
+      <div class="info">
         <i class="fas fa-info IconeInfo"></i>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
       </div>
 
       <!--partie accommodation-->
       <div class="page-accommodation">
         <!--partie hebergement a marseille-->
         <div class="acc-mars">
-          <h2>Hébergements à Marseille</h2>
           <div class="hot-mars">
+          <div class="hotmars-titre"><h2>Hébergements à Marseille</h2></div>
+          
             <div class="card">
               <div class="card-shadow">
                 <div class="card-header card-img">
@@ -294,7 +298,7 @@
       <div class="page-activity">
         <h2>Activités à Marseille</h2>
 
-        <div class="card activitecard1">
+        <div class="card activite-big">
           <div class="card-shadow">
             <div class="card-header card-img">
               <img
@@ -308,7 +312,7 @@
           </div>
         </div>
 
-        <div class="card activitecard2">
+        <div class="card activite-mini">
           <div class="card-shadow">
             <div class="card-header card-img">
               <img
@@ -322,63 +326,61 @@
           </div>
         </div>
 
-        <div class="card activitecard3">
-            <div class="card-shadow">
-              <div class="card-header card-img">
-                <img
-                  src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                  alt="Îles du Frioul"
-                />
-              </div>
-              <div class="card-body">
-                <h4>Îles du Frioul</h4>
-              </div>
+        <div class="card activite-mini">
+          <div class="card-shadow">
+            <div class="card-header card-img">
+              <img
+                src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="Îles du Frioul"
+              />
+            </div>
+            <div class="card-body">
+              <h4>Îles du Frioul</h4>
             </div>
           </div>
+        </div>
 
-        
-        <div class="card activitecard4">
-            <div class="card-shadow">
-              <div class="card-header card-img">
-                <img
-                  src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                  alt="Parc national des Calanques"
-                />
-              </div>
-              <div class="card-body">
-                <h4>Parc national des Calanques</h4>
-              </div>
+        <div class="card activite-big">
+          <div class="card-shadow">
+            <div class="card-header card-img">
+              <img
+                src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="Parc national des Calanques"
+              />
+            </div>
+            <div class="card-body">
+              <h4>Parc national des Calanques</h4>
             </div>
           </div>
+        </div>
 
-        <div class="card activitecard5">
-            <div class="card-shadow">
-              <div class="card-header card-img">
-                <img
-                  src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                  alt="Notre-Dame-de-la-Garde"
-                />
-              </div>
-              <div class="card-body">
-                <h4>Notre-Dame-de-la-Garde</h4>
-              </div>
+        <div class="card activite-mini">
+          <div class="card-shadow">
+            <div class="card-header card-img">
+              <img
+                src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="Notre-Dame-de-la-Garde"
+              />
+            </div>
+            <div class="card-body">
+              <h4>Notre-Dame-de-la-Garde</h4>
             </div>
           </div>
+        </div>
 
-       
-        <div class="card activitecard6">
-            <div class="card-shadow">
-              <div class="card-header card-img">
-                <img
-                  src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                  alt="Parc Longchamps"
-                />
-              </div>
-              <div class="card-body">
-                <h4>Parc Longchamps</h4>
-              </div>
+        <div class="card activite-mini">
+          <div class="card-shadow">
+            <div class="card-header card-img">
+              <img
+                src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="Parc Longchamps"
+              />
+            </div>
+            <div class="card-body">
+              <h4>Parc Longchamps</h4>
             </div>
           </div>
+        </div>
       </div>
     </main>
 
