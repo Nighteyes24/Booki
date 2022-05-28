@@ -186,9 +186,9 @@ header {
   width: 69%;
   min-height: 650px;
   border-radius: 25px;
-  padding: 2%;
+  padding: 20px;
   background-color: #f2f2f2;
-  margin: 1% 1% 1% 0;
+  margin: 10px 10px 10px 0;
 }
 .mars-hotels {
   display: flex;
@@ -242,9 +242,9 @@ header {
   width: 30%;
   min-height: 675px;
   border-radius: 25px;
-  padding: 2%;
+  padding: 20px;
   background-color: #f2f2f2;
-  margin: 1% 0 1% 1%;
+  margin: 10px 0 10px 10px;
 }
 .pop-hotels {
   display: flex;
@@ -253,6 +253,8 @@ header {
 }
 
 .pop-card {
+  display: flex;
+  flex-direction: row;
   min-width: 280px;
   height: 140px;
   background-color: #ffff;
@@ -272,6 +274,11 @@ header {
   display: flex;
   align-items: center;
   padding: 0px;
+}
+.pop-container{
+  display: flex;
+  flex-direction: column;
+
 }
 
 /*partie activités*/
