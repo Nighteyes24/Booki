@@ -10,7 +10,7 @@
 
 body {
   font-size: 15px;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
   padding: 10px;
 }
@@ -40,18 +40,6 @@ h3 {
 a {
   text-decoration: none;
 }
-@media (max-width: 768px) {
-  .filter{
-    display: flex;
-    flex-direction: column;
-  }
-  .hébergements{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-  }
-  
-}
 
 /* PARTIE TOP // header*/
 
@@ -62,11 +50,9 @@ header {
   height: 100px;
   margin: 0 50px;
 }
-
 .navbar-item {
   padding: 0 45px;
   justify-items: center;
-  text-decoration: none;
 }
 .logo {
   margin-right: auto;
@@ -91,17 +77,13 @@ header {
   flex-direction: row;
 }
 
-.recherche i {
+.fa-map-marker-alt {
   object-fit: cover;
   padding: 11px 15px 11px 15px;
   border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
 }
 
-#marecherche {
-  padding: 10px;
-  text-align: center;
-}
 
 .bouton {
   border: 1px solid #0065fc;
@@ -190,18 +172,23 @@ header {
 .hébergements {
   display: flex;
   flex-direction: row;
+  gap: 20px;
   margin: 10px 0;
+}
+.hébergements > * {
+  flex-grow: 1;
 }
 .mhotels {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 69%;
+  width: 300px;
+  flex-grow: 3;
   min-height: 650px;
   border-radius: 25px;
   padding: 40px;
   background-color: #f2f2f2;
-  margin: 10px 10px 10px 0;
 }
 .mars-hotels {
   display: flex;
@@ -218,12 +205,12 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: #ffff;
-  border: 4px solid #ffff;
-  border-radius: 10px;
+  border: 5px solid #ffff;
+  border-radius: 15px;
+  width: 250px;
+  overflow: hidden;
 }
 .card-booki img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   height: 100px;
   object-fit: cover;
 }
@@ -252,12 +239,11 @@ header {
 .pop-mars {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 300px;
   min-height: 675px;
   border-radius: 25px;
   padding: 40px;
   background-color: #f2f2f2;
-  margin: 10px 0 10px 10px;
 }
 .pop-hotels {
   display: flex;
@@ -267,12 +253,13 @@ header {
 }
 .card-hor {
   display: flex;
+  width: 350px;
 }
 .card-hor img {
   width: 40%;
   height: 140px;
 }
-.pop-container{
+.pop-container {
   padding: 10px;
 }
 /*partie activités*/
@@ -281,7 +268,6 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  height: 550px;
 }
 .card-activites {
   display: flex;
@@ -290,16 +276,17 @@ header {
   margin-top: 30px;
 }
 .act-big {
+  border: none;
   height: 340px;
   width: 280px;
 }
 
 .act-big img {
-  border: none;
   width: 100%;
   height: 80%;
 }
 .act-mini {
+  border: none;
   width: 250px;
 }
 .cardmini {
@@ -308,11 +295,12 @@ header {
   justify-content: space-between;
   gap: 10px;
 }
-
 .cardmini img {
   width: 100%;
 }
-
+.act-container{
+  padding-left: 15px;
+}
 /*partie du footer */
 
 .footer {
@@ -336,4 +324,31 @@ li {
 }
 a {
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .hébergements {
+    flex-wrap: wrap-reverse;
+  }
+  .mhotels{
+    background-color:white;
+  }
+  .filter h3 {
+    width: 100%;
+  }
+  .card-activites{
+    display: flex;
+    gap: 20px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
 }
