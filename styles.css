@@ -12,7 +12,7 @@ body {
   font-size: 15px;
   max-width: 1440px;
   margin: auto;
-  padding: 10px;
+  padding: 50px;
 }
 
 h1,
@@ -40,6 +40,9 @@ h3 {
 a {
   text-decoration: none;
 }
+:root {
+  --block-padding: 38px;
+}
 
 /* PARTIE TOP // header*/
 
@@ -47,22 +50,23 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
   margin: 0 50px;
 }
+.navbar-container {
+  display: flex;
+}
 .navbar-item {
-  padding: 0 45px;
-  justify-items: center;
+  padding: 45px;
+  border-top: 4px solid transparent;
 }
 .logo {
   margin-right: auto;
   height: 70px;
 }
-.navbar-item:hover {
-  border-top: 4px solid #0065fc;
-  padding: 45px;
+.navbar-item:hover,
+.navbar-item.active {
+  border-color: #0065fc;
   color: #0065fc;
-  justify-items: center;
   text-decoration: none;
 }
 
@@ -84,12 +88,10 @@ header {
   background-color: #f2f2f2;
 }
 
-
 .bouton {
   border: 1px solid #0065fc;
   border-radius: 0 10px 10px 0;
   display: inline-block;
-  font-weight: 600px;
   padding: 10px 15px;
 }
 
@@ -187,7 +189,7 @@ header {
   flex-grow: 3;
   min-height: 650px;
   border-radius: 25px;
-  padding: 40px;
+  padding: var(--block-padding);
   background-color: #f2f2f2;
 }
 .mars-hotels {
@@ -207,7 +209,6 @@ header {
   background-color: #ffff;
   border: 5px solid #ffff;
   border-radius: 15px;
-  width: 250px;
   overflow: hidden;
 }
 .card-booki img {
@@ -215,12 +216,13 @@ header {
   object-fit: cover;
 }
 .card-vert {
-  min-width: 200px;
+  height: 200px;
+  width: 200px;
 }
 .card-vert img {
   width: 100%;
 }
-/* On mouse-over, add a deeper shadow */
+
 .card-booki:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -242,18 +244,20 @@ header {
   width: 300px;
   min-height: 675px;
   border-radius: 25px;
-  padding: 40px;
+  padding: var(--block-padding);
   background-color: #f2f2f2;
 }
 .pop-hotels {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
 .card-hor {
   display: flex;
-  width: 350px;
+  width: 340px;
+  height: 145px;
 }
 .card-hor img {
   width: 40%;
@@ -285,21 +289,39 @@ header {
   width: 100%;
   height: 80%;
 }
-.act-mini {
+.act-mini1 {
   border: none;
-  width: 250px;
+  height: 280px;
+}
+.act-mini2 {
+  border: none;
+  height: 240px;
+}
+.act-mini3 {
+  border: none;
+  width: 280px;
+  height: 320px;
+  object-fit: fill;
+}
+.act-mini4 {
+  border: none;
+  width: 280px;
 }
 .cardmini {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+  height: 340px;
 }
 .cardmini img {
   width: 100%;
+  height: 70%;
+  object-fit: cover;
 }
-.act-container{
+.act-container {
   padding-left: 15px;
+  height: 50px;
 }
 /*partie du footer */
 
@@ -325,29 +347,76 @@ li {
 a {
   text-decoration: none;
 }
+
+/* Partie media Queries*/
+
+@media (min-width: 769px) {
+  .only-mobile {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
-  header{
+  :root {
+    --block-padding: 20px;
+  }
+  body {
+    padding: 0px;
+  }
+  header {
     display: flex;
     flex-direction: column;
   }
-  .navbar-container{
+  .navbar-container {
     display: flex;
     flex-direction: row;
+  }
+  .navbar-item {
+    border-top: 0px;
+    border-bottom: 3px solid #d9d9d9;
+    text-decoration: none;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+  .only-mobile {
+    color: #fff;
   }
   .hébergements {
     flex-wrap: wrap-reverse;
   }
-  .mhotels{
-    background-color:white;
+  .mars-hotels {
+    display: flex;
+    justify-content: center;
+  }
+  .pop-mars {
+    border-radius: 0;
+  }
+  .mhotels {
+    background-color: white;
+  }
+
+  .card-vert {
+    width: 260px;
+  }
+  .card-hor {
+    width: auto;
+    height: 140px;
   }
   .filter h3 {
     width: 100%;
   }
-  .card-activites{
+  .activites {
+    padding-left: 10px;
+  }
+  .card-activites {
     display: flex;
     gap: 20px;
   }
-  .footer{
+  .act-mini1 {
+    width: 280px;
+  }
+  .footer {
     display: flex;
     flex-direction: column;
   }
