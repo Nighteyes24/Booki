@@ -1,5 +1,3 @@
-PROJET EN COURS!
-
 premier livrable de formation web dev :
 
 Compétences évaluées
