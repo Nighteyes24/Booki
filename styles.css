@@ -354,6 +354,20 @@ a {
   .only-mobile {
     display: none;
   }
+  .mars-hotels {
+    justify-content: center;
+  }
+  .card-hor {
+    width: auto;
+  }
+  .card-activites {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .act-mini1 {
+    width: 280px;
+  }
 }
 @media (max-width: 768px) {
   :root {
@@ -397,11 +411,10 @@ a {
   }
 
   .card-vert {
-    width: 260px;
+    width: 300px;
   }
   .card-hor {
-    width: auto;
-    height: 140px;
+    width: 300px;
   }
   .filter h3 {
     width: 100%;
@@ -412,6 +425,7 @@ a {
   .card-activites {
     display: flex;
     gap: 20px;
+    justify-content: center;
   }
   .act-mini1 {
     width: 280px;
