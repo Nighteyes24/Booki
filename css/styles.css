@@ -18,6 +18,7 @@
 
 body {
   max-width: 1440px;
+  margin: auto;
 }
 
 main {
@@ -470,7 +471,9 @@ a {
   .info {
     margin: 20px;
   }
-
+  .search-form {
+    width: auto;
+  }
   .filter {
     flex-direction: row;
     align-items: flex-start;
