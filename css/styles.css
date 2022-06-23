@@ -102,14 +102,13 @@ header {
   border-right: none;
   border-radius: 15px;
 }
-.search-icon {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.fa-location-dot {
   background-color: #d9d9d9;
-  height: 50px;
-  width: 55px;
+  height: 49px;
+  width: 50px;
   border-radius: 15px 0 0 15px;
+  padding: 15px;
+  
 }
 
 .search-form input {
@@ -167,23 +166,7 @@ header {
 .filter-btn:hover {
   background-color: #deebff;
 }
-
-/* info line*/
-
-.info {
-  display: flex;
-  align-items: center;
-}
-.IconeInfo {
-  display: flex;
-  justify-content: center;
-  margin-right: 10px;
-}
-
-.Icone-fi {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Icone {
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -192,8 +175,15 @@ header {
   color: #0065fc;
   font-size: 20px;
   padding: 10px;
+  margin-top: 2px;
 }
 
+/* info line*/
+.info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .IconeInfo {
   width: 25px;
   height: 20px;
@@ -201,7 +191,7 @@ header {
   border: 2px solid #f2f2f2;
   background-color: #fff;
   color: #0065fc;
-  text-align: center;
+  padding-left: 8px;
 }
 
 /*Partie Hotels*/
