@@ -3,28 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-    <!--fontstyle-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
 
+    <!--fontstyle-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css" integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <title>Booki / Accueil</title>
+    <title>Booki Accueil</title>
   </head>
 
   <body>
     <!--partie header // haut de page web-->
     <header>
       <a href="#"
-        ><img class="logo" src="images/logo/Booki@3x.png" alt="logo booki"
-      /></a>
+        ><img class="logo" src="images/logo/Booki@3x.png" alt="logo booki"/></a>
 
       <nav class="navbar-container">
         <a class="navbar-item" href="page-accommodations"> Hébergements</a>
@@ -39,7 +32,7 @@
       </div>
 
       <div class="search-form">
-        <i class="fas fa-map-marker-alt search-icon"></i>
+        <i class="fa-solid fa-location-dot"></i>
         <input class="search-form-txt" type="text" placeholder="Marseille, France">
         <button>
           <span class="search-btn-txt">Rechercher</span>
@@ -47,29 +40,30 @@
         </button>
       </div>
 
-        <div class="filter">
-          <h3>Filtres</h3>
-          <button class="filter-btn">
-            <i class="fa-solid fa-money-bill-wave Icone-fi"></i>
-            <span class="btn-label">Économique</span>
-          </button>
+      <div class="filter">
+        <h3>Filtres</h3>
+        <button class="filter-btn">
+          <i class="fa-solid fa-money-bill-wave Icone"></i>
+          <span class="btn-label">Économique</span>
+        </button>
 
-          <button class="filter-btn">
-            <i class="fa-solid fa-child-reaching Icone-fi"></i>
-            <span class="btn-label">Familial</span>
-          </button>
- 
-          <button class="filter-btn">
-            <i class="fa-solid fa-heart Icone-fi"></i>
-            <span class="btn-label">Romantique</span>
-          </button>
+        <button class="filter-btn">
+          <i class="fa-solid fa-child-reaching Icone"></i>
+          <span class="btn-label">Familial</span>
+        </button>
 
-          <button class="filter-btn">
-            <i class="fa-solid fa-paw Icone-fi"></i>
-            <span class="btn-label">Animaux Autorisés</span>
-          </button>
-        </div>
+        <button class="filter-btn">
+          <i class="fa-solid fa-heart Icone"></i>
+          <span class="btn-label">Romantique</span>
+        </button>
+
+        <button class="filter-btn">
+          <i class="fa-solid fa-paw Icone"></i>
+          <span class="btn-label">Animaux Autorisés</span>
+        </button>
       </div>
+
+      <!-- ligne information-->
       <div class="info">
         <i class="fas fa-info IconeInfo"></i>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -80,7 +74,7 @@
         <article class="mhotels">
           <h2>Hébergements à Marseille</h2>
           <div class="mars-hotels">
-            <div class="card-booki card-vert">
+            <div  class="card-booki card-vert">
               <img
                 src="images/hebergements/1_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                 alt="Auberge La Cannebière"
